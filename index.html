@@ -28,8 +28,14 @@
     </nav> 
     
     <ul class="auth-nav list">
-      <li class="menu-item"><a href="#email" class="link contact-link"><span class="current">info@devstudio.com</span></a></li>
-      <li class="menu-item"><a href="#tel" class="link contact-link">+38(096)111-11-11</a></li>
+      <li class="menu-item"><a href="mailto:info@devstudio.com" class="link contact-link">
+        <svg class="email-icon" width="16" height="12">
+          <use xlink:href="./images/spriteopt.svg#icon-envelope"></use>
+        </svg>info@devstudio.com</a></li>
+      <li class="menu-item"><a href="tel:380961111111" class="link contact-link">
+        <svg class="email-icon" width="10" height="16"> 
+          <use xlink:href="./images/spriteopt.svg#icon-phone"></use>
+        </svg>+38 096 111 11 11</a></li>
     </ul>
   
  </div>
@@ -56,29 +62,29 @@
       <section class="section about-section">
         <div class="container">
         <h2 class="section-title visually-hidden" >Преимущества</h2>
-        <ul class="list">
-          <li class="content-box">
+        <ul class="list feature">
+          <li class="list-item icon-antenna">
             <h3 class="about-title">Внимание к деталям</h3>
             <p class="about-info">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li class="content-box">
+          <li class="list-item icon-clock">
             <h3 class="about-title">Пунктуальность</h3>
             <p class="about-info">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="content-box">
+          <li class="list-item icon-diagram">
             <h3 class="about-title">Планирование</h3>
             <p class="about-info">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li class="content-box">
+          <li class="list-item icon-astronaut">
             <h3 class="about-title">Современные технологии</h3>
             <p class="about-info">
               Значимость этих проблем настолько очевидна, что реализация
@@ -95,21 +101,21 @@
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list">
-          <li class="content-box">
+          <li class="list-item">
             <img
               src="./images/box1.jpg"
               alt="планшет и клавиатура человек работает"
               width="370"
             />
           </li>
-          <li class="content-box">
+          <li class="list-item">
             <img
               src="./images/box2.jpg"
               alt="телефон и ноутбук человек за работой"
               width="370"
             />
           </li>
-          <li class="content-box">
+          <li class="list-item">
             <img
               src="./images/box3.jpg"
               alt="планшет с красочной картинкой человек рисует с помощью стилуса"
@@ -172,6 +178,58 @@
           </li>
         </ul>
       </div>
+      </section>
+
+    <!--Постоянные клиенты-->
+      <section class="section">
+        <div class="container">
+          <h3 class="section-title">Постоянные клиенты</h3>
+          <ul class="list clients-box">
+
+            <li class="list-item">
+              <a href="" class="clients-logo" target="_blank" rel="noopener noreferer">
+              <svg width="45" height="50">
+                <use xlink:href="./images/spriteopt.svg#icon-logo1"></use>
+              </svg></a>
+            </li>
+
+            <li class="list-item">
+              <a href="" class="clients-logo" target="_blank" rel="noopener noreferer">
+              <svg width="40" height="52">
+              <use xlink:href="./images/spriteopt.svg#icon-logo2"></use>
+            </svg></a>
+            </li>
+            <li class="list-item">
+              <a href="" class="clients-logo" target="_blank" rel="noopener noreferer">
+              <svg width="41" height="43">
+              <use xlink:href="./images/spriteopt.svg#icon-logo3"></use>
+            </svg></a>
+              
+            </li>
+            <li class="list-item">
+              <a href="" class="clients-logo" target="_blank" rel="noopener noreferer">
+              <svg width="80" height="42">
+              <use xlink:href="./images/spriteopt.svg#icon-logo4"></use>
+            </svg></a>
+              
+            </li>
+            <li class="list-item">
+              <a href="" class="clients-logo" target="_blank" rel="noopener noreferer">
+              <svg width="59" height="47">
+              <use xlink:href="./images/spriteopt.svg#icon-logo5"></use>
+            </svg></a>
+              
+            </li>
+            <li class="list-item">
+              <a href="" class="clients-logo" target="_blank" rel="noopener noreferer">
+              <svg width="89" height="46">
+              <use xlink:href="./images/spriteopt.svg#icon-logo6"></use>
+            </svg></a>
+              
+            </li>
+          </ul>
+        </div>
+        
       </section>
     
     </main>

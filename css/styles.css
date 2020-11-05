@@ -6,6 +6,7 @@
   --dark-background: #2f303a;
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --button: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 html {
@@ -153,15 +154,25 @@ p {
   margin-bottom: 32px;
 }
 
+.email-icon {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+
 .auth-nav .contact-link {
   margin-left: 30px;
+  font-weight: 500;
 }
 
 .auth-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--main-text-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
 }
 
 .head-line {
@@ -267,11 +278,11 @@ p {
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.content-box {
+.list-item {
   width: cal(100% - 90px) / 4;
 }
 
-.content-box:not(:last-child) {
+.list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -304,6 +315,32 @@ p {
 
 .about-info:not(:last-child) {
   margin-right: 30px;
+}
+
+/*Следующие свойства для иконок в Преимущества*/
+.feature > .list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 25px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--button);
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/icon/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut.svg);
 }
 
 /*Наша команда*/
@@ -357,12 +394,37 @@ p {
   margin-bottom: 30px;
 }
 
+/*Клиенты*/
+.clients-box {
+  display: flex;
+}
+
+.clients-box .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients-logo:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 /*Футер*/
 .footer-box {
   background-color: var(--dark-background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
   margin-bottom: 20px;
   font-family: Raleway;
