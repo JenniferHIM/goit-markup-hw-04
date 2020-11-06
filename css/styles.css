@@ -394,6 +394,40 @@ p {
   margin-bottom: 30px;
 }
 
+.social-box {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 16px;
+}
+
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socialmedia {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  fill: var(--icon-color);
+}
+
+.socialmedia-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.socialmedia:hover {
+  background-color: var(--accent-color);
+  fill: var(--white);
+}
+
 /*Клиенты*/
 .clients-box {
   display: flex;
@@ -411,6 +445,7 @@ p {
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  fill: var(--icon-color);
 }
 
 .clients-logo:hover {
@@ -421,8 +456,6 @@ p {
 /*Футер*/
 .footer-box {
   background-color: var(--dark-background);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -452,9 +485,36 @@ p {
   color: var(--footer-contacts);
 }
 
-/
-/*Секция Filter*/
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
+/*Присоединяйтесь*/
+.join-us {
+  margin-left: 70px;
+}
+
+.title-join-us {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.social-box-footer {
+  display: flex;
+}
+
+.footer {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--white);
+}
+
+/*Секция Filter*/
 .container .container-top {
   max-width: 1200px;
 }
