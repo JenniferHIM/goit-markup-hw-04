@@ -176,6 +176,11 @@ p {
   color: var(--accent-color);
 }
 
+.contact-link:hover .email-icon,
+.contact-link:focus {
+  fill: var(--accent-color);
+}
+
 .head-line {
   border-bottom: 1px solid var(--main-text-color);
 }
@@ -218,6 +223,7 @@ p {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/Img.jpg");
+  background-color: var(--dark-background);
 }
 .hero-container {
   max-width: 690px;
